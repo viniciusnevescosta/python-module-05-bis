@@ -9,7 +9,7 @@ def main() -> None:
     print("This will raise an exception!")
     print(
         "Testing the hidden create_earth: "
-        f"{alchemy.create_earth()}"  # type: ignore[attr-defined]
+        f"{alchemy.create_earth()}"
     )
 
 
