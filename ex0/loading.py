@@ -26,13 +26,13 @@ def main() -> None:
         "  pyproject.toml declares the same constraints, and Poetry pins "
         "resolved versions"
     )
-    print("  in poetry.lock so every install is identical.")
+    print("  in poetry.lock so installs use the locked versions.")
     if pandas_ready and numpy_ready:
         print("\nAll reagents present and accounted for.")
     else:
         print("\nInstall missing reagents with either:")
         print("pip install -r ex0/requirements.txt")
-        print("poetry install")
+        print("poetry -C ex0 install")
 
 
 if __name__ == "__main__":
